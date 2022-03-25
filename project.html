@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Alt-Steak.html</title>
+    <style>
+      html {
+        background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 50px;
+        font-family: cursive;
+        color: rgb(6, 53, 119);
+      }
+      h2 {
+        text-align: center;
+        font-weight: lighter;
+        color: rgb(17 34 58 / 82%);
+      }
+      p {
+        text-align: center;
+        color: rgb(10, 29, 55);
+        font-size: 18px;
+        line-height: 1, 5px;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        background-color: rgb(10, 29, 55);
+        color: rgb(255, 216, 204);
+        padding: 10px;
+        border: 1px solid rgb(15, 57, 116);
+        box-shadow: -7px -4px rgb(13, 24, 41);
+        border-radius: 25%;
+        margin-top: 50px;
+        transition: all 200ms cubic-bezier(1, -0.06, 0.1, 1.56);
+      }
+      img {
+        display: block;
+        margin: 30px auto;
+        max-width: 80%;
+        width: 500px;
+      }
+
+      .date {
+        color: #5e1186;
+        font-weight: bolder;
+      }
+      .source {
+        text-align: right;
+      }
+      .time {
+        color: rgb(10, 29, 55);
+        font-size: 18px;
+      }
+      button:hover {
+        color: rgb(10, 29, 55);
+        background-color: rgb(255, 216, 204);
+        cursor: pointer;
+      }
+      .time:hover {
+        background-color: rgb(139, 123, 123, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>‘Alt-Steak’</h1>
+    <hr />
+    <h2>
+      <em>
+        The world’s first 3D-printed vegan steak is here and it could be hitting
+        restaurants soon!
+      </em>
+      😋
+    </h2>
+    <img
+      src="https://www.foodbusinessnews.net/ext/resources/2020/6/RedefineMeatAltSteak_Lead.jpg?t=1593530711&width=1080"
+    />
+    <p>
+      Redefine Meat, an Israeli company based in Rehovot, has unveiled an
+      ‘Alt-Steak’ which replicates the texture, flavour and appearance of
+      real-life meat – all thanks to 3D-printing technology. The new Alt-Steak
+      is made out of soy and pea proteins, coconut fat and sunflower oil, along
+      with natural colours and flavours. Designed to recreate the muscle
+      structure of beef, the faux steak is high in protein and – being
+      plant-based – has no cholesterol.
+    </p>
+    <br />
+    <div class="time">
+      The company is expected to start testing the alternative beef cuts in
+      high-end restaurants in Israel as earlier as <strong>next month</strong> –
+      with plans to roll it out in European restaurants
+      <span class="date"> next year</span> and at supermarkets in
+      <span class="date">2022</span>.
+    </div>
+
+    <button>Read more</button>
+    <br />
+    <p class="source">
+      <a
+        href="https://metro.co.uk/2020/06/30/worlds-first-3d-printed-vegan-steak-hitting-restaurants-soon-12924017/"
+        target="_blank"
+      >
+        Sources</a
+      >
+    </p>
+    <p>Created by Zuzanna</p>
+    <script>
+      let buttton = document.querySelector("button");
+      let buttonClick = buttton.addEventListener("click", ask);
+      function ask() {
+        let name = prompt("What is your name?");
+        let email = prompt(
+          " What is your email address? We will send you all the necessary informations there 😁"
+        );
+        if (email.length > 0 && name.length > 0) {
+          alert(
+            `Thank you ${name} for your interest! We will send you a file with the most important informations soon! 🎈`
+          );
+        } else {
+          alert(
+            "We need your data only in order to provide more information 🐟 please insert your name and emial address"
+          );
+        }
+      }
+    </script>
+  </body>
+</html>
