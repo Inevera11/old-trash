@@ -1,0 +1,33 @@
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nav__item {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: aquamarine;
+    border-radius: 50%;
+    transition: all 1s ease-in-out;
+
+
+}
+
+.nav__item:hover {
+    font-size: 5rem;
+    box-shadow: 40px 15px 15px black;
+    padding: 5rem;
+    color: red;
+}
+
+.nav__item span {
+    transition: all 1s ease-out;
+}
+
+.nav__item span:hover {
+    color:rgb(19, 98, 168);
+}
+
