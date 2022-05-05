@@ -7,6 +7,7 @@
     <title>SheCodes</title>
     <style>
       body {
+        background-image: repeating-linear-gradient(#64bfe3ac, white);
         font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
       }
       section {
@@ -25,7 +26,7 @@
       }
       h2 {
         text-align: center;
-        color: #885df1;
+        color: hsla(203, 52%, 41%, 0.815);
         padding: 0 0 24px;
       }
       p {
@@ -34,22 +35,35 @@
         font-family: PT Mono, monospace;
         text-align: center;
       }
-      button {
+      .working {
         border-radius: 25px;
         margin: 0 auto;
         display: block;
-        background-color: #fff;
-        border: 1px solid #885df1;
-        color: #885df1;
+        background-color: rgba(55, 150, 223, 0.902);
+        border: 1px solid #4083d597;
+        color: hsla(198, 71%, 81%, 0.826);
         font-size: 16px;
         line-height: 22px;
         padding: 16px 24px;
         text-decoration: none;
         transition: all 200ms ease;
       }
-      button:hover {
-        color: #fff;
-        background: #885df1;
+      .working:hover {
+        color: rgba(8, 60, 107, 0.913);
+        background: #9fcadc;
+      }
+      .back{
+        border-radius: 25px;
+        margin: 0,0,12px;
+        display: block;
+        background-color: rgba(55, 150, 223, 0.902);
+        border: 1px solid #4083d597;
+        color: hsla(198, 71%, 81%, 0.826);
+        font-size: 16px;
+        line-height: 22px;
+        padding: 16px 24px;
+        text-decoration: none;
+        transition: all 200ms ease;
       }
     </style>
   </head>
@@ -64,19 +78,26 @@
         <strong> Jesteś dobrą osobą! </strong>
       </p>
       <br />
-      <button>Donate</button>
+      <button class="working">Donate</button>
+      <button class="back">
+        <a
+        href="https://metro.co.uk/2020/06/30/worlds-first-3d-printed-vegan-steak-hitting-restaurants-soon-12924017/"
+        target="_blank"
+      >
+        Chcę wracać
+      </button>
     </section>
     <script>
-      let buttonClick = document.querySelector("button");
+      let buttonClick = document.querySelector(".working");
       buttonClick.addEventListener("click", user);
       function user() {
         let name = prompt("What's your name?");
         let age = prompt("How much  would you like to donate?");
         let h1 = document.querySelector("h1");
         if (age > 17) {
-          h1.innerHTML = "Siemano, " + name + " ! za tyle to całkuję!";
+          h1.innerHTML = "Siemano " + name + " ! za tyle to całkuję!";
         } else {
-          h1.innerHTML = "ojoj, " + name + " ! jest uzależniony  od twerkowania";
+          h1.innerHTML = "Ojoj " + name + " , jesteś uzależniony  od twerkowania";
         }
       }
     </script>
