@@ -56,27 +56,27 @@
 
   <body>
     <section>
-      <h1>👩‍💻 She Codes is a Coding Workshop for Women</h1>
-      <h2>Access a new career in Technology</h2>
+      <h1>👩‍💻 Nie znajdziesz tu niczego interesującego</h1>
+      <h2>Zmarnujesz czas czytając tekst napisany pod wpływem herbatki</h2>
       <p>
-        She Codes teaches coding, design and management skills to women
+        *prawie napisałam przez ch*
         <br />
-        <strong> Limited amount of spots! </strong>
+        <strong> Jesteś dobrą osobą! </strong>
       </p>
       <br />
-      <button>Apply Now</button>
+      <button>Donate</button>
     </section>
     <script>
       let buttonClick = document.querySelector("button");
       buttonClick.addEventListener("click", user);
       function user() {
         let name = prompt("What's your name?");
-        let age = prompt("How old are you?");
+        let age = prompt("How much  would you like to donate?");
         let h1 = document.querySelector("h1");
         if (age > 17) {
-          h1.innerHTML = "Hi, " + name + " ! Welcome to SheCodes !";
+          h1.innerHTML = "Siemano, " + name + " ! za tyle to całkuję!";
         } else {
-          h1.innerHTML = "Sorry, " + name + " ! You cannot join SheCodes";
+          h1.innerHTML = "ojoj, " + name + " ! jest uzależniony  od twerkowania";
         }
       }
     </script>

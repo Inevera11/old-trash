@@ -113,13 +113,14 @@
       let buttton = document.querySelector("button");
       let buttonClick = buttton.addEventListener("click", ask);
       function ask() {
-        let name = prompt("What is your name?");
+        let name = prompt("Ur not interested at all");
         let email = prompt(
           " What is your email address? We will send you all the necessary informations there 😁"
         );
         if (email.length > 0 && name.length > 0) {
           alert(
-            `Thank you ${name} for your interest! We will send you a file with the most important informations soon! 🎈`
+            `Thank you ${name} for your interest! We will send you a file with the most important informations soon! 🎈
+            #może się kiedyś doczekasz`
           );
         } else {
           alert(
