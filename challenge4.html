@@ -22,7 +22,7 @@
         font-weight: lighter;
         font-size: 40px;
       }
-      button {
+      .me {
         display: block;
         margin: 0 auto;
         border: 2px solid rgba(177, 63, 18, 0.947);
@@ -64,7 +64,7 @@
         font-size: larger;
         font-weight: bolder;
       }
-      button:hover {
+      .me:hover {
         background-color: #ffea854d;
         color: hwb(37deg 3% 19%);
         border-color: rgba(230, 172, 47, 0.596);
@@ -78,17 +78,78 @@
         text-align: center;
         margin-top: 10px;
       }
+      .back_link {
+        color: hsl(0, 0%, 100%);
+        text-decoration: none;
+        font-family: monospace;
+        font-size: x-large;
+      }
+      .back {
+        transition: all 200ms ease;
+        position: absolute;
+        left: 5%;
+        bottom: auto;
+        width: 220px;
+        height: 50px;
+        border: none;
+        outline: none;
+        color: #fff;
+        background: #ecadad4c;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 10px   ;
+      }
+        .back:hover:before {
+            content: '';
+            background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+            position: absolute;
+            top: -2px;
+            left:-2px;
+            background-size: 400%;
+            z-index: -1;
+            filter: blur(5px);
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            animation: glowing 20s linear infinite;
+            opacity: 0;
+            transition: opacity .3s ease-in-out;
+            border-radius: 10px;
+        }
+
+
+        .back:hover:before {
+            opacity: 1;
+        }
+
+        .back:hover:after {
+            z-index: -1;
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #e9c1c1;
+            left: 0;
+            top: 0;
+            border-radius: 10px;
+        }
+
+        @keyframes glowing {
+            0% { background-position: 0 0; }
+            50% { background-position: 400% 0; }
+            100% { background-position: 0 0; }
+        }
+      
     </style>
   </head>
   <body>
     <h1>
-      Moja stronka
-      <br />
+      Moja stronka 
       🎉🎉
     </h1>
     <h2>Napisałam stronkę</h2>
 
-    <button>Ja moje</button>
+    <button class="me">Ja moje</button>
     <ul>
       <strong>
         <li class="user">
@@ -128,5 +189,9 @@
       <span>Email:</span> niePodam@.io <span>Instagram:</span> Uwish.io
     </div>
     <br />
+    <button class="back" >
+     <a class="back_link" href="index.html" target="_blank">
+    Back
+    </button>
   </body>
 </html>

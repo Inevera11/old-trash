@@ -51,19 +51,35 @@
       .working:hover {
         color: rgba(8, 60, 107, 0.913);
         background: #9fcadc;
+        cursor: pointer;
       }
       .back{
         border-radius: 25px;
-        margin: 0,0,12px;
         display: block;
-        background-color: rgba(55, 150, 223, 0.902);
+        background-color: rgb(55 150 223 / 32%);
         border: 1px solid #4083d597;
-        color: hsla(198, 71%, 81%, 0.826);
         font-size: 16px;
         line-height: 22px;
         padding: 16px 24px;
-        text-decoration: none;
         transition: all 200ms ease;
+        position: absolute;
+        right: 5%;
+        bottom: 5%;
+      }
+      .back:hover{
+        background-color: #1b73708f;
+        color: hwb(198 8% 44% / 0.826);
+        border: 10px inset #ffffff;
+        box-shadow: 7px 5px 20px 8px #1bd89c61;
+      }
+      .link{
+        text-decoration: none;
+        color: #d1dee4c4;
+        
+      }
+      .link:hover{
+        font-family: cursive;
+        font-variant-caps: petite-caps;
       }
     </style>
   </head>
@@ -80,8 +96,8 @@
       <br />
       <button class="working">Donate</button>
       <button class="back">
-        <a
-        href="https://metro.co.uk/2020/06/30/worlds-first-3d-printed-vegan-steak-hitting-restaurants-soon-12924017/"
+        <a class="link"
+        href="index.html"
         target="_blank"
       >
         Chcę wracać
