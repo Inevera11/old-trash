@@ -56,7 +56,7 @@
         font-family: monospace;
       }
 
-      button {
+      .work {
         display: block;
         margin: 20px auto;
         border: 1px solid #1a64d6;
@@ -71,7 +71,7 @@
         cursor: pointer;
       }
 
-      button:hover {
+      .work:hover {
         background: white;
         color: #1a64d6;
         border: 1px solid #1a64d6;
@@ -79,6 +79,10 @@
     </style>
   </head>
   <body>
+    <button class="back" >
+      <a class="back_link" href="index.html" >
+     Back </a>
+     </button>
     <h1>
       🌤
       <br />
@@ -100,10 +104,10 @@
       </li>
     </ul>
 
-    <button>Change city</button>
+    <button class="work">Change city</button>
     <p>Coded by Zuzanna Bożek</p>
     <script>
-      let button = document.querySelector("button");
+      let button = document.querySelector(".work");
       buttonClick = button.addEventListener("click", updateHtml);
       function updateHeading(newHeading) {
         let heading = document.querySelector("h1");
