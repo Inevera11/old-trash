@@ -27,7 +27,7 @@
         font-size: 18px;
         line-height: 1, 5px;
       }
-      button {
+      .more {
         display: block;
         margin: 0 auto;
         background-color: rgb(10, 29, 55);
@@ -50,14 +50,11 @@
         color: #5e1186;
         font-weight: bolder;
       }
-      .source {
-        text-align: right;
-      }
       .time {
         color: rgb(10, 29, 55);
         font-size: 18px;
       }
-      button:hover {
+      .more:hover {
         color: rgb(10, 29, 55);
         background-color: rgb(255, 216, 204);
         cursor: pointer;
@@ -65,9 +62,29 @@
       .time:hover {
         background-color: rgb(139, 123, 123, 0.5);
       }
+      .back{
+        display: block;
+        position: absolute;
+        right: 10%;
+        display: block;
+        position: absolute;
+        right: 10%;
+        background-color: #eae47ab5;;
+        border: 1px;
+        border-radius: 40%;
+        padding: 3px 7px;
+        box-shadow: 2px -1px 20px yellow;
+        cursor: pointer;
+        transition: opacity 1s ease-in-out;
+      }
+      .back:hover{
+        opacity: 0;
+      }
+
     </style>
   </head>
   <body>
+   
     <h1>‘Alt-Steak’</h1>
     <hr />
     <h2>
@@ -98,19 +115,13 @@
       <span class="date">2022</span>.
     </div>
 
-    <button>Read more</button>
+    <button class="more">Read more</button>
     <br />
-    <p class="source">
-      <a
-        href="https://metro.co.uk/2020/06/30/worlds-first-3d-printed-vegan-steak-hitting-restaurants-soon-12924017/"
-        target="_blank"
-      >
-        Sources</a
-      >
-    </p>
+    <a href="index.html"><button class="back"> Bye </button></a>
+  
     <p>Created by Zuzanna</p>
     <script>
-      let buttton = document.querySelector("button");
+      let buttton = document.querySelector(".more");
       let buttonClick = buttton.addEventListener("click", ask);
       function ask() {
         let name = prompt("Ur not interested at all");

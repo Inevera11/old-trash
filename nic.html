@@ -65,21 +65,18 @@
         position: absolute;
         right: 5%;
         bottom: 5%;
+        color: #d1dee4c4;
       }
       .back:hover{
         background-color: #1b73708f;
         color: hwb(198 8% 44% / 0.826);
         border: 10px inset #ffffff;
         box-shadow: 7px 5px 20px 8px #1bd89c61;
+        font-variant-caps: petite-caps;
+        cursor: pointer;
       }
       .link{
         text-decoration: none;
-        color: #d1dee4c4;
-        
-      }
-      .link:hover{
-        font-family: cursive;
-        font-variant-caps: petite-caps;
       }
     </style>
   </head>
@@ -95,12 +92,10 @@
       </p>
       <br />
       <button class="working">Donate</button>
-      <button class="back">
-        <a class="link"
+      <a class="link"
         href="index.html">
-        Chcę wracać
-        </a>
-      </button>
+        <button class="back">Chcę wracać</button>
+      </a>
     </section>
     <script>
       let buttonClick = document.querySelector(".working");

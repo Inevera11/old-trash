@@ -79,10 +79,7 @@
         margin-top: 10px;
       }
       .back_link {
-        color: hsl(0, 0%, 100%);
         text-decoration: none;
-        font-family: monospace;
-        font-size: x-large;
       }
       .back {
         transition: all 200ms ease;
@@ -93,12 +90,14 @@
         height: 50px;
         border: none;
         outline: none;
-        color: #fff;
+        color: hsl(0, 0%, 100%);
         background: #ecadad4c;
         cursor: pointer;
         position: relative;
         z-index: 0;
-        border-radius: 10px   ;
+        border-radius: 10px;
+        font-size: x-large;
+        font-family: monospace;
       }
         .back:hover:before {
             content: '';
@@ -111,15 +110,9 @@
             filter: blur(5px);
             width: calc(100% + 4px);
             height: calc(100% + 4px);
-            animation: glowing 20s linear infinite;
-            opacity: 0;
-            transition: opacity .3s ease-in-out;
+            animation: pulsing 20s linear infinite;
             border-radius: 10px;
-        }
-
-
-        .back:hover:before {
-            opacity: 1;
+            cursor: pointer;
         }
 
         .back:hover:after {
@@ -134,7 +127,7 @@
             border-radius: 10px;
         }
 
-        @keyframes glowing {
+        @keyframes pulsing {
             0% { background-position: 0 0; }
             50% { background-position: 400% 0; }
             100% { background-position: 0 0; }
@@ -189,10 +182,8 @@
       <span>Email:</span> niePodam@.io <span>Instagram:</span> Uwish.io
     </div>
     <br />
-    <button class="back" >
-     <a class="back_link" href="index.html">
-    Back
-     </a>
-    </button>
+    <a class="back_link" href="index.html">
+    <button class="back" > Back </button> 
+    </a>
   </body>
 </html>
